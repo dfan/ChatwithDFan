@@ -46,7 +46,7 @@ Starting Up the ChatBot
 Known Issues
 ============
 
-1. The parsing script is not perfect. Pictures and GIFs sent by chat will just register as a blank line in the .txt output. When you send a message and your friend reads it but doesn't reply, and then you send another message a few days later, Facebook will add the new messages to a separate JSON object. So in your output the script might look like:
+1. Pictures and GIFs sent by chat will just register as a blank line in the .json and .txt output. When you send a message and your friend reads it but doesn't reply, and then you send another message a few days later, Facebook will add the new messages to a separate JSON object. So in your output the script might look like:
 
 Me:
 Blah blah
@@ -61,5 +61,4 @@ Friend:
 Oh sorry
 
 As of now the script cannot fix this and you will have to manually remove the extra linebreaks. Leaving the extra line breaks won't cause the chatbot to crash, but the output will be less realistic because it will have trained itself correctly only on the chat up until that extra line break. 
-
 

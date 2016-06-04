@@ -1,8 +1,12 @@
 import json
 import sys
 import os
+import shutil
+from os.path import join
+from os import listdir, rmdir
+from shutil import move
 #
-# Sample Execution: python chatBot.py Kyle.json Kyle
+# Sample Execution: python parser.py Kyle.json Kyle
 #
 
 file = sys.argv[1]     # e.g. Kyle.json
@@ -41,3 +45,7 @@ for i in data:
 target.write('\n') 
 numMessages = '%d messages' %(count)
 target.write(numMessages)
+
+
+script_dir = os.path.dirname(__file__) #<-- absolute dir the script is in
+move(join(script_dir, output + '.txt'), join(script_dir, 'Chats', output + '.txt'))

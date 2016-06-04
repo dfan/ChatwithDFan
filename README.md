@@ -34,7 +34,7 @@ Parsing Messages to Retrieve Only the Conversation Text
 
 1. `dumper.py` outputs in JSON so to get the chats in a more readable format, we need to run `parser.py`
 2. Go inside `parser.py` and change the entry for `myID` to that of your own Facebook profile ID.
-3. If the file you produced in the download step was named `Kyle.json`, run python chatBot.py Kyle.json Kyle
+3. If the file you produced in the download step was named `Kyle.json`, run python parser.py Kyle.json Kyle
 4. This parsed output is saved to `Chats`; check to make sure name.txt is in your directory/Chats
 
 Starting Up the ChatBot

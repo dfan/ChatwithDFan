@@ -4,9 +4,10 @@ Simulate your own chats with yourself or friends by feeding your own Facebook ch
 
 Credentials Setup
 =============
+
 These instructions are identical to the first section of the README in [FBMessageScraper]((https://github.com/RaghavSood/FBMessageScraper)
 The following fields in `dumper.py` need to be replaced with your own.
-f
+
 1. In Chrome, open [facebook.com/messages](https://www.facebook.com/messages/) and open any conversation with a fair number of messages
 2. Open the network tab of the Chrome Developer tools
 3. Scroll up in the conversation until the page attempts to load previous messages
@@ -23,12 +24,14 @@ f
 
 Downloading Messages
 ====================
+
 1. Get the conversation ID for your friend(s) at [findmyfbid.com](http://findmyfbid.com)
 2. Run the command `python dumper.py {id} {name} 2000`, and put the value you just retrieved for ID. For {name} put the filename you want for the output, e.g. if you want Kyle.txt to appear in your directory, type Kyle here.
 3. Messages are saved by default to `Chats`; check to make sure name.json is in your directory/Chats.
 
 Parsing Messages to Retrieve Only the Conversation Text
 ====================
+
 1. `dumper.py` outputs in JSON so to get the chats in a more readable format, we need to run `parser.py`
 2. Go inside `parser.py` and change the entry for `myID` to that of your own Facebook profile ID.
 3. If the file you produced in the download step was named `Kyle.json`, run python chatBot.py Kyle.json Kyle
@@ -36,11 +39,13 @@ Parsing Messages to Retrieve Only the Conversation Text
 
 Starting Up the ChatBot
 ====================
+
 1. Execute `python chatBot.py Name.txt Name`
 2. Follow the on-screen instructions and have fun!
 
 Known Issues
 ============
+
 1. The parsing script is not perfect. Pictures and GIFs sent by chat will just register as a blank line in the .txt output. When you send a message and your friend reads it but doesn't reply, and then you send another message a few days later, Facebook will add the new messages to a separate JSON object. So in your output the script might look like:
 Me:
 Blah blah

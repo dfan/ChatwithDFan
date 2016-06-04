@@ -52,8 +52,9 @@ Me:
 Blah blah
 
 
+
 Me:
-Blah Blah
+Blah blah
 
 Friend:
 Oh sorry

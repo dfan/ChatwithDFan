@@ -47,6 +47,7 @@ Known Issues
 ============
 
 1. The parsing script is not perfect. Pictures and GIFs sent by chat will just register as a blank line in the .txt output. When you send a message and your friend reads it but doesn't reply, and then you send another message a few days later, Facebook will add the new messages to a separate JSON object. So in your output the script might look like:
+
 Me:
 Blah blah
 

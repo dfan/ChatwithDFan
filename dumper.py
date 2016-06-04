@@ -34,8 +34,7 @@ limit = int(sys.argv[2])
 headers = {"origin": "https://www.facebook.com", 
 "accept-encoding": "gzip,deflate", 
 "accept-language": "en-US,en;q=0.8", 
-"cookie": "_ga=GA1.2.124705194.1451836936; datr=B0aJVqBA01yj5bcrWGVS6-jt; pl=n; lu=ghtK4yetiAygwUwNofY9Ew_A; c_user=100001268660775; xs=254%3A714vgwSrduSNbQ%3A2%3A1464899209%3A11412; csm=2; s=Aa47NJRZDIJbbA8q.BXUJaJ; sb=iZZQV2cr5XISP5lTYokxSYW-; fr=05zCRw4LImPjrNYEr.AWVrU_25RPS-qgdtAtxdjLgWzww.BXUJaJ._1.FdQ.0.0.AWURtNXU; p=-2; act=1464920913863%2F21; presence=EDvF3EtimeF1464921064EuserFA21B01268660775A2EstateFDsb2F1464920905409Et2F_5b_5dElm2FnullEuct2F1464920162011EtrFA2close_5fescA2EtwF497984414EatF1464920973623EwmlFDfolderFA2inboxA2Ethread_5fidFA2user_3a1B00334634805A2CG464921064743CEchFDp_5f1B01268660775F93CC; wd=722x678", 
-
+"cookie": # insert your own
 "pragma": "no-cache", 
 "user-agent": " Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.107 Safari/537.36", 
 "content-type": "application/x-www-form-urlencoded", 
@@ -63,13 +62,13 @@ while end_mark not in messages_data:
     "messages[user_ids][" + str(talk) + "][limit]": str(limit),
         "messages[user_ids]["+ str(talk) + "][timestamp]": str(timestamp),
     "client": "web_messenger", 
-    "__user": "100001268660775", 
-    "__a": "1", 
-    "__dyn": "7AmajEzUGByFd112u6aOGeFxq9ACwKyaF7By8VFLFwxBxCbzES2N6xybxu13wIwYxebkwy3eF8W49XDG4UiCxicxW6otz9UcXCxaFEW2PxOcxu5ocE88C9ADBBGbx24o", 
-    "__req": "y", 
-    "fb_dtsg": "AQHkD0yfB1s9:AQHcFyPOgTr2", 
-    "ttstamp": "2658172107684812110266491155758658172997012180791038411450", 
-    "__rev": "2371355"}
+    "__user": # insert your own (leave the comma in), 
+    "__a": # insert your own (leave the comma in), 
+    "__dyn": # insert your own, 
+    "__req": # insert your own, 
+    "fb_dtsg": # insert your own, 
+    "ttstamp": # insert your own, 
+    "__rev": # insert your own}
     data = urllib.urlencode(data_text)
     url = "https://www.facebook.com/ajax/mercury/thread_info.php"
 
